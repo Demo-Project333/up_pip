@@ -1,4 +1,8 @@
-
+properties([
+    [$class: 'GithubProjectProperty',
+    displayName: '',
+    projectUrlStr: 'https://github.com/Demo-Project333/Rep2.git'],
+    pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any 
